@@ -31,3 +31,9 @@
 - do "git remote add origin https://github.com/saurabhsingh720/FlightAndSearchService.git"
 - do "git push -u origin main"
 - then all the folders is pushed to that repo in github
+
+
+- install "npm i dotenv" in the root directory for making the key secure in a file
+- create a file named with ".env" in the root directory
+- for getting access to the file use
+"require('dotenv').config()" inside the root directory js file
