@@ -1,7 +1,8 @@
 # welcome to the Airline service
 
-<!-- ## Design service -->
-> ![Design table](./dbtable.png)
+**Design service**
+> ![Design](./doc%20design.png)
+
 
 > - create repository
 > - for creating microservices
@@ -63,3 +64,7 @@
   - `git add .`
   - `git commit -m "comments"`
   - `git push origin main`
+
+
+  **Design table of database**
+  > ![Design table](./dbtable.png)
