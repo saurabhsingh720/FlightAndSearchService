@@ -3,7 +3,7 @@
 > - for creating microservices
   > - create a folder flightandsearch
 > - in the folder flightsandserach do "npm init"
-> - then "npm i express"
+> - then `npm i express`
 > - then "npm i body-parser"
 > - then "npm i nodemon"
 
@@ -14,7 +14,7 @@
    - controllers/
    - middlewares/
    - services/
-   - utiils/
+   - utils/
    - config/
    - repository/
 - tests/
