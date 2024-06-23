@@ -58,4 +58,6 @@
 
 **For pushing files using command**
   - git status
-  - 
+  - git add .
+  - git commit -m "comments"
+  - git push origin main
