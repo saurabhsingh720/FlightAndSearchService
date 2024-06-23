@@ -68,3 +68,9 @@
 
   **Design table of database**
   > ![Design table](./dbtable.png)
+
+
+  **For creating tables for city and attribute name**
+   - `npx sequelize model:generate --name City --attributes name:String`
+   - now after checking `show tables;` we can not find any tables
+   - so to link it use `npx sequelize db:migrate`
