@@ -34,10 +34,9 @@
 - then all the folders is pushed to that repo in github
 
 
-> install "npm i dotenv" in the root directory for making the key secure in a file
-> create a file named with ".env" in the root directory
-> for getting access to the file use
-"require('dotenv').config()" inside the root directory js file
+> - install "npm i dotenv" in the root directory for making the key secure in a file
+> - create a file named with ".env" in the root directory
+> - for getting access to the file use "require('dotenv').config()" inside the root directory js file
 - for accessing the env variable use "process.env.nameofvar"   example  process.env.PORT
 
 **install inside flightsandserach folder path**
