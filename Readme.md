@@ -37,3 +37,21 @@
 - create a file named with ".env" in the root directory
 - for getting access to the file use
 "require('dotenv').config()" inside the root directory js file
+- for accessing the env variable use "process.env.nameofvar"   example  process.env.PORT
+
+----install inside flightsandserach folder path
+- install "npm i mysql2"
+- install "npm i sequelize"
+- install "npm i sequelize-cli"
+
+
+- for setting up databases 
+- do "npx sequelize init" in the flightsandserach folder path
+
+
+- now some files get created
+- add all files inside src folder
+- go to config.json file and add password of databases and name of database
+- then do "npx sequelize db:create" in the src path folder
+- now databases get created
+
