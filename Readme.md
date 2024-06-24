@@ -66,8 +66,8 @@
   - `git push origin main`
 
 
-  **Design table of database**
-  > ![Design table](./dbtable.png)
+**Design table of database**
+ > ![Design table](./dbtable.png)
 
 
   **For creating tables for city and attribute name**
@@ -78,9 +78,10 @@
    - then after changing do `>npx sequelize db:migrate`
    
 
-   **City-repository**
-   - Completed all the CRUD function in city repository
-   - completed index.js file in it.
-   **Services**
-   - Completed city-service file
-   - completed index.js in it.
+**City-repository**
+ - Completed all the CRUD function in city repository
+ - completed index.js file in it.
+   
+**Services**
+ - Completed city-service file
+ - completed index.js in it.
