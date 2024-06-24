@@ -74,3 +74,9 @@
    - `npx sequelize model:generate --name City --attributes name:String`
    - now after checking `show tables;` we can not find any tables
    - so to link it use `npx sequelize db:migrate`
+   - if you want to change something in the city or migration file firstly do `npx sequelize db:migrate:undo`
+   - then after changing do `>npx sequelize db:migrate`
+   
+
+   **city-repository**
+   - Completed all the CRUD function in city repository
