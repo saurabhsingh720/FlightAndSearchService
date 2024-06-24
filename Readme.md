@@ -78,5 +78,9 @@
    - then after changing do `>npx sequelize db:migrate`
    
 
-   **city-repository**
+   **City-repository**
    - Completed all the CRUD function in city repository
+   - completed index.js file in it.
+   **Services**
+   - Completed city-service file
+   - completed index.js in it.
