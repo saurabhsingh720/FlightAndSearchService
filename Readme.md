@@ -102,3 +102,8 @@
  - do `npx sequelize model:generate --name Airport --attributes name:String,        address:String,cityId:integer` for creating airport table.
  - now do some changes in association 
  - now do `npx sequelize db:migrate`
+ - now airport tables get finally created.
+ - For generating initial values to `seeder file` use `npx sequelize seed:generate --name add-airports`
+ - add all the airports in the seed file
+ - then do `npx sequelize db:seed:all`
+ - then do for checking in databases `select * from Airports Join Cities on Airports.cityId = Cities.id where Cities.id = 10;`

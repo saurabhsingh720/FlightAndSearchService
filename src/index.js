@@ -6,6 +6,9 @@ const ApiRoutes = require('./routes/index');
 
 // const CityRepository = require('./repository/city-repository');
 
+const db = require('./models/index');
+// const {City, Airport} = require('./models/index');
+
 const setupAndStartServer = async () =>{
 
      //create the express object
@@ -27,6 +30,19 @@ const setupAndStartServer = async () =>{
           // const repo = new CityRepository();
           // repo.createCity({name: "gkp"});
           // repo.deleteCity(1);
+
+          // db.sequelize.sync({alter: true});
+          // const city = await City.findOne({
+          //      where: {
+          //           id: 10
+          //      }
+          // });
+          // const airports = await city.getAirports();
+          // console.log(city, airports);
+
+          if(process.env.SYNC_DB) {
+               db.sequelize.sync({alter: true});
+          }
      });
 }
 
