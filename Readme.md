@@ -1,4 +1,4 @@
-# welcome to the Airline service
+# Welcome to the Airline service
 
 **Design service**
 > ![Design](./doc%20design.png)
@@ -92,3 +92,13 @@
  - inside `v1` folder created index.js file that contains all req `get`, `post`, `patch`, `delete`.
  - added `getAll` city apis.
  - Added `filter` to getAll cities.
+
+ > - `till now we created city table'
+ > - `city -> id, name, created_at, updated_at`
+
+## Now creating Airport table
+ - `Airport -> id, name, address, city_id, created_at, updated_at` 
+ - Go to the src path.
+ - do `npx sequelize model:generate --name Airport --attributes name:String,        address:String,cityId:integer` for creating airport table.
+ - now do some changes in association 
+ - now do `npx sequelize db:migrate`
