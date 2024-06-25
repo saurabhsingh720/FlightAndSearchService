@@ -91,3 +91,4 @@
  - created index.js file and v1 folder
  - inside `v1` folder created index.js file that contains all req `get`, `post`, `patch`, `delete`.
  - added `getAll` city apis.
+ - Added `filter` to getAll cities.
