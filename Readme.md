@@ -107,3 +107,9 @@
  - add all the airports in the seed file
  - then do `npx sequelize db:seed:all`
  - then do for checking in databases `select * from Airports Join Cities on Airports.cityId = Cities.id where Cities.id = 10;`
+
+## Now creating a Airplane table
+ - do `npx sequelize model:generate --name Airplane --attributes modelNumber:String,capacity:integer`
+ - now do `npx sequelize db:migrate`
+ - now adding seeder file do `npx sequelize seed:generate --name add-airplanes`
+ - now do `npx sequelize db:seed:all`
