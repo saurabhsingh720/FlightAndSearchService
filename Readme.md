@@ -70,7 +70,7 @@
  > ![Design table](./dbtable.png)
 
 
-  **For creating tables for city and attribute name**
+  **For creating tables for city (model) and attribute name**
    - `npx sequelize model:generate --name City --attributes name:String`
    - now after checking `show tables;` we can not find any tables
    - so to link it use `npx sequelize db:migrate`
@@ -96,7 +96,7 @@
  > - `till now we created city table'
  > - `city -> id, name, created_at, updated_at`
 
-## Now creating Airport table
+## Now creating Airport table(model)
  - `Airport -> id, name, address, city_id, created_at, updated_at` 
  - Go to the src path.
  - do `npx sequelize model:generate --name Airport --attributes name:String,        address:String,cityId:integer` for creating airport table.
@@ -108,8 +108,12 @@
  - then do `npx sequelize db:seed:all`
  - then do for checking in databases `select * from Airports Join Cities on Airports.cityId = Cities.id where Cities.id = 10;`
 
-## Now creating a Airplane table
+## Now creating a Airplane table(model)
  - do `npx sequelize model:generate --name Airplane --attributes modelNumber:String,capacity:integer`
  - now do `npx sequelize db:migrate`
  - now adding seeder file do `npx sequelize seed:generate --name add-airplanes`
  - now do `npx sequelize db:seed:all`
+
+ ## Now creating a Flight table(model)
+ - do `npx sequelize model:generate --name Flights --attributes flightNumber:String, airplaneId:integer,departureAirportId:integer,arrivalAirportId:integer,arrivalTime:Date,departureTime:Date,price:integer,boardingGate:String,totalSeats:integer` 
+ - do `npx sequelize db:migrate`
