@@ -117,3 +117,11 @@
  ## Now creating a Flight table(model)
  - do `npx sequelize model:generate --name Flights --attributes flightNumber:String, airplaneId:integer,departureAirportId:integer,arrivalAirportId:integer,arrivalTime:Date,departureTime:Date,price:integer,boardingGate:String,totalSeats:integer` 
  - do `npx sequelize db:migrate`
+ - completed all the create, get, and getall flights function
+ - applied filters on the flights
+ - till now all the flights is handle using postman at path `localhost:3000/api/v1/flights`
+
+- **Now crud repository is setuped**
+- **Then Airport table(model) is   created**
+- settuped all airport services, repository, controllers
+- for airports we use  `localhost:3000/api/v1/airports` path in postman
