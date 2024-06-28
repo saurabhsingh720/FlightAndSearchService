@@ -45,9 +45,9 @@ const setupAndStartServer = async () =>{
           }
 
 
-          await Airplane.create({
-               modelNumber: "Bombardier CRJ"
-          });
+          // await Airplane.create({
+          //      modelNumber: "Bombardier CRJ"
+          // });
      });
 }
 
